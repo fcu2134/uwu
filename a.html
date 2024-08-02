@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,9 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+           
             background-color: #f8bbd0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+             font-family: 'Roboto', sans-serif;
             margin: 0;
         }
 
@@ -20,7 +21,7 @@
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             position: relative;
             width: 90%;
             max-width: 500px;
@@ -48,7 +49,7 @@
         }
 
         .yes-btn {
-            background-color: #8e24aa;
+            background-color: #f313ac;
         }
 
         .yes-btn:hover {
@@ -56,11 +57,11 @@
         }
 
         .no-btn {
-            background-color: #d32f2f;
+            background-color: #696868;
         }
 
         .no-btn:hover {
-            background-color: #c62828;
+            background-color: #fd0000;
         }
 
         .text-btn {
@@ -68,31 +69,33 @@
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 1em;
-            background-color: #fbc02d;
+            background-color: #ef94eb;
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            color: white;
+            color: rgb(16, 16, 16);
         }
 
         .text-btn:hover {
-            background-color: #f9a825;
+            background-color: pink;
         }
 
         #message {
             margin-top: 20px;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #ff4343;
             border-radius: 5px;
-            background-color: #fff;
+            background-color: white;
             color: #333;
             font-size: 1em;
+            
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>??</h1>
+        <h1> Si fuéramos dos patitos en el agua, ¿serías mi “cuac”? ¿Quieres ser mi novia?
+        </h1>
         <button id="yes-btn" class="btn yes-btn">si(?)</button>
         <button id="no-btn" class="btn no-btn">bayabuu </button>
         <button id="show-msg-btn" class="text-btn">no lo presiones hasta el final uwu </button>
@@ -113,10 +116,10 @@
 
             // Posiciones iniciales para evitar solapamiento
             const yesX = (containerRect.width / 4- yesBtnRect.width / 2);
-            const yesY = (containerRect.height / 1.5 - yesBtnRect.height / 3);
+            const yesY = (containerRect.height / 1.2 - yesBtnRect.height / 3);
 
             const noX = (3 * containerRect.width / 4 - noBtnRect.width / 2);
-            const noY = (containerRect.height / 1.5 - noBtnRect.height / 2);
+            const noY = (containerRect.height / 1.2 - noBtnRect.height / 2);
 
             const textX = (containerRect.width / 2 - showMsgBtnRect.width / 2);
             const textY = (containerRect.height / 2 - showMsgBtnRect.height / 2) + 100;
@@ -180,7 +183,7 @@
         positionButtons();
 
         let yesMoveCount = 0;
-        const maxYesMoves = 0;
+        const maxYesMoves = 1;
 
         let noMoveCount = 0;
         const maxNoMoves = 15;
@@ -212,9 +215,13 @@
         });
 
         showMsgBtn.addEventListener('click', function() {
-            messageDiv.textContent ="Independientemente de la respuesta que elijas, quiero agradecerte profundamente por todos los momentos que hemos compartido. Podría expresar mil palabras más, pero por ahora, simplemente quiero que sepas cuánto valoro cada instante que hemos vivido juntos."
+            messageDiv.textContent =
+
+
+"Independientemente de la respuesta que elijas, quiero agradecerte profundamente por todos los momentos que hemos compartido. Hay tantas cosas que me gustaría decirte, pero cuando estoy contigo, a veces me quedo sin palabras. Estoy escribiendo esto con todo el miedo que tengo, pero siento que es necesario sacar esto de mi pecho. Te quiero con todo mi corazón. Puede que no sea perfecto, pero quiero que sepas que siempre puedes contar conmigo para lo que necesites. Te deseo lo mejor en todo, y si no soy la persona que eliges, lo entenderé. Gracias por todo."
         });
 
     </script>
 </body>
 </html>
+
